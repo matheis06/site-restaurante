@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio | A'Bonbonne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">A'Bonbonne</a><nav><a href="index.html">Home</a><a href="eventos.html">Eventos</a><a href="cardapio.html">Cardápio</a><a href="espaco.html">Espaço</a><a href="orcamento.html">Orçamento</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></nav><a class="btn btn-primary" href="orcamento.html">Simular evento</a></div></header>
+    <main class="container section">
+      <div class="section-head"><p class="eyebrow">Cardápio inteligente</p><h1>Monte seu cardápio em 3 passos</h1></div>
+      <div class="steps-indicator"><span class="active">1. Escolha pacote</span><span>2. Monte cardápio</span><span>3. Veja preview</span></div>
+      <section class="menu-builder">
+        <div>
+          <h2>Selecione os itens</h2>
+          <div class="check-group"><h3>Carnes</h3><label><input type="checkbox" data-price="42" /> Mignon ao molho madeira</label><label><input type="checkbox" data-price="34" /> Strogonoff</label><label><input type="checkbox" data-price="30" /> Parmegiana</label></div>
+          <div class="check-group"><h3>Massas</h3><label><input type="checkbox" data-price="28" /> Lasanha</label><label><input type="checkbox" data-price="24" /> Penne</label><label><input type="checkbox" data-price="29" /> Rondelli</label></div>
+          <div class="check-group"><h3>Saladas</h3><label><input type="checkbox" data-price="18" /> Folhas nobres</label><label><input type="checkbox" data-price="16" /> Mix de legumes</label></div>
+          <div class="check-group"><h3>Camarão</h3><label><input type="checkbox" data-price="48" /> Camarão ao alho e óleo</label><label><input type="checkbox" data-price="54" /> Camarão na moranga</label></div>
+        </div>
+        <aside class="builder-preview">
+          <h2>Seu evento está ficando assim:</h2>
+          <ul id="menu-selection"><li>Selecione itens para visualizar.</li></ul>
+          <p><strong>Estimativa por pessoa:</strong> <span id="price-range">R$ 0 a R$ 0</span></p>
+          <a class="btn btn-primary" href="orcamento.html">Continuar para orçamento</a>
+        </aside>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

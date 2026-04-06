@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orçamento | A'Bonbonne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">A'Bonbonne</a><nav><a href="index.html">Home</a><a href="eventos.html">Eventos</a><a href="cardapio.html">Cardápio</a><a href="espaco.html">Espaço</a><a href="orcamento.html">Orçamento</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a></nav><a class="btn btn-primary" href="https://wa.me/554134222897" target="_blank" rel="noopener">WhatsApp</a></div></header>
+    <main class="container section">
+      <div class="section-head"><p class="eyebrow">Lead Funnel</p><h1>Simule seu evento em 2 minutos</h1></div>
+      <div class="progress-wrap"><div id="lead-progress"></div><p id="lead-step-text">Falta só 1 passo</p></div>
+      <form id="lead-form" class="lead-form">
+        <label>Tipo de evento<select name="tipo" required><option value="">Selecione</option><option>Casamento</option><option>Aniversário</option><option>Corporativo</option><option>Infantil</option></select></label>
+        <label>Nº de convidados<input type="number" name="convidados" min="20" max="320" required /></label>
+        <label>Data<input type="date" name="data" required /></label>
+        <label>Preferências<textarea name="preferencias" rows="4" placeholder="Ex.: estilo do evento, pratos desejados, decoração..."></textarea></label>
+        <label>Contato<input type="text" name="contato" required placeholder="Nome + WhatsApp" /></label>
+        <button class="btn btn-primary" type="submit">Enviar e abrir WhatsApp</button>
+      </form>
+      <p id="lead-confirmation" class="hidden">✅ Recebemos sua solicitação! Abrindo WhatsApp para confirmação instantânea.</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
